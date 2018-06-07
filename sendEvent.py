@@ -67,9 +67,7 @@ print ('connected - yipee !!!!!!!!!!!!!') # used for debugging
 flashLed(led_green, 5)
 print("now upload to platform......")
 
-#  r = requests.get("http://ratserver.australiaeast.cloudapp.azure.com/smart-trap/apiGW/apiGWcatM1.php", json={'ph': '8.2', 'orp': '624', 'flow': '5', 'temp': '20.3'} )
-
-r = requests.get("http://ratserver.australiaeast.cloudapp.azure.com/smart-trap/apiGW/apiGWcatM1.php", json={'devId': dev_id, 'lat': lat, 'lon': lon} )
+r = requests.get("http://server.xxx.xxx.xx.com/mygw.php", json={'devId': dev_id, 'lat': lat, 'lon': lon} )
 
 print(r)
 print(r.text)
